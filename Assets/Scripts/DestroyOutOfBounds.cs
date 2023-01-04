@@ -7,7 +7,7 @@ public class DestroyOutOfBounds : MonoBehaviour
     [SerializeField]
     private float topBound=30f;
     [SerializeField]
-    private float lowerBound = -10f;
+    private float lowerBound = -1f;
     private GameObject go;
     // Start is called before the first frame update
 
