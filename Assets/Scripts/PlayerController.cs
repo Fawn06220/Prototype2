@@ -28,13 +28,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.position = new Vector3(Xrange, transform.position.y, transform.position.z);
         }
-
+        //On applique le vecteur
         transform.Translate(new Vector3(movementX, 0.0f, 0.0f) * Time.deltaTime * speed);
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        //Fonctions
+        //On recupère le vecteur 2
         Vector2 movementVector = context.ReadValue<Vector2>();
         movementX = movementVector.x;
     }

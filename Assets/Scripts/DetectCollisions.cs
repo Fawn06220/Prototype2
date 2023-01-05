@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Classe de detection des collisions
 public class DetectCollisions : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -18,7 +19,9 @@ public class DetectCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        //On detruit le game object
         Destroy(gameObject);
+        //On detruit le game object avec lequel on entre en collision
         Destroy(other.gameObject);
     }
 }
